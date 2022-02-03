@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="static/img/favicon_package_v0.16/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Save the Vaquita</title>
+</head>
+<body>
+  <div id="container">
+    <div class="discs">
+      <div class="blue-disc">
+        <h1 class="ten">600</h1>
+        <h1 class="remain">Remain</h1>
+      </div>
+      <div class="red-disc">
+        <h1 class="ce">CRITICALLY ENDANGERED</h1>
+      </div>
+    </div>
+    <div id="c"></div>
+      <div class="main-text-content">
+        <div class="left-container" id="main-container">
+          <p class="main-text">The Vaquita (Phocoena sinus) are one of the World's smallest, and now most endangered cetacean. It's name translates to 'little cow' in Spainsh. Their diet consists of fish and squid, and sometimes crab and lobster.
+              In 1996 there had been reported to be around 600 Vaquitas in the wild. In 2015 it had dropped to 59 and now in 2020, it's down to around 10 remaining Vaquitas.</p>
+          <div class="home-bottom-section">
+            <p class="sub-paragraph">Unless the species’ decline can be slowed, Vaquitas will likely become <strong>EXTINCT</strong> before <Strong>2021</Strong>.</p>
+          </div>
+        </div>
+        <header id="header">
+          <img src="static/img/logo.png" class="logo" width="496" height="192" alt="save_the_vaquita_logo" onclick="Home();">
+          <img src="static/img/menu.svg" alt="hamburger_menu" class="hamburger-menu" width="48px" height="48px" menu='closed' onclick="hamburgerMenu()">
+          <img src="static/img/x.svg" alt="hamburger_menu" class="close-ico" width="48px" height="48px" onclick="hamburgerMenu()">
+          <ul class="nav-items">
+              <li class="nav-item">
+                <a class="nav-active" id="home" onclick="Home();">About Vaquitas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="location" onclick="Loc();">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="threat" onclick="Threats();">Threats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="hcih" onclick="HowHelp();">How can i help?</a>
+              </li>
+            </ul>
+        </header>
+        <div class="arrows">
+          <img src="static/img/arrow-down (1).svg" class="left-arrow" width="68px" height="68px" onclick="Loc();">
+        </div>
+          <div class="right-container">
+              <h1 class="subtitle" id="loc-st">Location</h1>
+              <div class="location-info">
+                <h3>Sea of Cortez</h3>
+                <h4>Northern Gulf of California</h4>
+                <h4>Mexico</h4>
+              </div>
+              <p class="main-text">Vaquita's only Habitat is in the Northern Gulf of California. They are not found anywhere else on earth. They live in shallow waters and spend most of their time underwater. However, Living in shallow waters puts them in the reach of illegal fishing nets.</p>
+              <div class="arrows">
+                <img src="static/img/arrow-down (1).svg" class="left-arrow" width="68px" height="68px" onclick="Threats();">
+              </div>
+            </div>
+           <div class="left-container-2">
+            <h1 class="subtitle" id="threat-st">Threats</h1>
+            <p class="main-text">The Vaquita's Habitat is threatened by illegal fishing boats, hunting for Totoaba. The Totoaba is hunted for mainly for it's bladder, of which is used in Chinese medicine and as a health food. Because both the Vaquita and the Totoaba occupy the same Habitat, they are both at risk of being caught/entangled in gill nets. These nets are designed to catch anything and everything, killing the Vaquita.</p>
+            <div class="arrows-2">
+              <img src="static/img/arrow-down (1).svg" class="left-arrow" width="68px" height="68px" onclick="HowHelp();">
+            </div>
+          </div>
+           <div class="center-container">
+             <div>
+              <h1 style=" margin-bottom: 15px; font-size: 32px;" id="hich-title">How can I help?</h1>
+              <p class="end-text">Vaquita's are on the verge of extinction. Visit these sites and found out how you can help...</p>
+             </div>
+             <div class="boxes">
+               <div class="box">
+                  <img src="static/img/WWF_logo_2.png" alt="WWF Logo" width="150px" height="150px" class="img-logo">
+                  <p>WWF</p>
+                  <a href="https://www.worldwildlife.org/species/vaquita" target="_blank"><button class="btn-secondary">Visit Site</button></a>
+                </div>
+                <div class="box">
+                <img src="static/img/WDC_logo.png" alt="Whale and Dolphin Conservation Logo" width="150px" height="150px" class="img-invert">
+                <p>Whale and Dolphin Conservation</p>
+                <a href="https://uk.whales.org/whales-dolphins/species-guide/vaquita/" target="_blank"><button class="btn-secondary">Visit Site</button></a>
+              </div>
+              <div class="box">
+                <img src="static/img/PCS.png" alt="Porpoise Conservation Society" width="150px" height="150px" class="img-invert">
+                <p style="padding: 0 10px;">Porpoise Conservation Society</p>
+                <a href="https://porpoise.org/save-the-vaquita/" target="_blank"><button class="btn-secondary">Visit Site</button></a>
+              </div>
+              <div class="box">
+                <img src="static/img/IUCN_Red_List_logo.png" alt="IUCN Red List" width="150px" height="150px" class="img-logo">
+                <p>IUCN Red List</p>
+                <a href="https://www.iucnredlist.org/species/17028/50370296#habitat-ecology" target="_blank"><button class="btn-secondary">Visit Site</button></a>
+              </div>
+             </div>
+             <footer>
+               <p>Designed and built by Matt Cromwell.</p>
+               <p>Sources:</p>
+              <a href="https://uk.whales.org/whales-dolphins/species-guide/vaquita/" class="source-link">Uk.whales.org</a>
+              <a href="https://www.worldwildlife.org/species/vaquita" class="source-link">www.worldwildlife.org</a>
+              <a href="https://www.iucnredlist.org/species/17028/50370296#habitat-ecology" class="source-link">www.iucnredlist.org</a>
+              <a href="https://porpoise.org/save-the-vaquita/" class="source-link">porpoise.org</a>
+              <button class="btn-secondary" onclick="Home();">Back to top</button>
+             </footer>
+           </div>
+    </div>
+    <script src="static/js/three.min.js"></script>
+    <script src="static/js/GLTFLoader.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/three.domevent.js"></script>
+    <script src="static/js/scrolling.js"></script>
+
+</body>
+</html>
