@@ -57,7 +57,7 @@ document.body.appendChild( renderer.domElement );
 
 
 // //axis
-scene.add(new THREE.AxesHelper(500));
+// scene.add(new THREE.AxesHelper(500));
 
 //enviroment
 
@@ -127,13 +127,6 @@ directionalLight.castShadow = true
 scene.add( directionalLight);
 // ground plane
 
-const geometry = new THREE.PlaneGeometry( 10, 10);
-const material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
-const plane = new THREE.Mesh( geometry, material );
-plane.rotation.x = Math.PI / 2;
-plane.position.y = -0.12;
-plane.receiveShadow = true;
-scene.add( plane );
 
 //camera setup
 camera.position.z = 0;
